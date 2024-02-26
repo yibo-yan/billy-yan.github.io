@@ -1,0 +1,237 @@
+@font-face {
+    font-family: mathFont;
+    src: url(../font/codex/codex.ttf);
+}
+@font-face {
+    font-family: codeStyle;
+    src: url(../font/code.ttf);
+}
+@font-face {
+    font-family: codeV2;
+    src: url(../font/code3x/CODE3X-D.TTF);
+}
+@font-face{
+    font-family: thinCode;
+    src : url(../font/thinCode.ttf)
+}
+
+/* Here is the style sheet for all pages */
+h1{
+    color : white;
+    margin-top: 1px;
+    font-family: thinCode;
+    text-align: center;
+    font-size: 30px;
+    overflow: hidden; 
+    border-right: .11em solid white;
+    white-space: nowrap; 
+    margin: 0 auto;
+    padding: 2px;
+    max-width: 30.5%; 
+    animation: typing 4s steps(30, end), blink-caret .75s step-end infinite; 
+}
+body{
+    border: solid 12px white;
+    padding-left:250px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 250px;
+    background-image: url(../image/vintage.jpg);
+    color: white; 
+    background-position: center;
+    background-size: 70%;
+}
+.myMap{
+    margin-top: 20px;
+    padding: 10px;
+    width :100%;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    border-radius: 10px;
+    z-index: 99;
+}
+.myMap:hover{
+    opacity: 1;
+    filter : grayscale(0);
+    transition-property: opacity, filter;
+    transition-duration: 4s, 4s;
+    transition-timing-function: ease, ease-in;
+}
+h2{
+    font-family: mathFont;
+    font-size: 120px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top : 20px
+}
+nav{
+    margin-top:0px;
+    margin-bottom: 20px;
+}
+nav ul{
+    list-style: none;
+    display : flex;
+}
+nav ul a{
+    color:#ffffff
+}
+nav ul a:link{
+    flex-grow : 1;
+    text-align : center;
+    padding-left: 5px;
+    padding-top : 15px;
+    padding-bottom : 15px; 
+    font-size : 40pt;
+    text-transform: uppercase;
+    font-weight : bold;
+    font-family : codeV2;
+    text-decoration : none ; /* removes the underline*/
+}
+
+
+nav ul a:focus{
+    outline-color : #ffffff;
+}
+
+nav ul a:hover{
+    /* border-top : solid 5px #6528F7; */
+    background-color : #fffdfd;
+    color : black;
+    border : solid 2px white;
+    border-radius: 3px;
+}
+#intro{
+    margin-top: 30px;
+    font-size: 14pt;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 3px;
+    padding-right: 3px;
+    width : 100%;
+    text-align: center;
+    font-family: codeStyle;
+    box-sizing: border-box; 
+}
+#intro:hover{
+    background-color: black;
+    transition: background-color 2s ease-in-out;
+}
+blockquote{
+    color : white;
+    font-family: codeStyle;
+    text-align: center;
+    font-size: 24px;
+    
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:white }
+  }
+#messTableTitle{
+    font-size: 20pt;
+    padding: 10px;
+    font-family: thinCode;
+}
+#messTable{
+    border: solid 1px white;
+    width : 100%;
+    text-align:center;
+    padding: 10px;
+    font-size: 16pt;
+    font-family: thinCode;
+}
+#messTable tr td{
+    padding: 10px;
+}
+#messTable tr td{
+    width: 50%;
+    padding: 40px;
+    padding-left: 15px;
+    /* border : solid 3px white; */
+}
+
+.input{
+    background: rgba(0,0,0,.5);
+    color : black;
+    font-size: 14px;
+    font-family: thinCode;
+    width : 300px;
+    padding: 30px;
+    font-size: 12pt;
+    background-color: #fffdfd;
+}
+#messageBox{
+    padding-top: 2px;
+    width: 700px;
+    height: 200px ;
+}
+.formBtn{
+    width: 100px;
+    height: 50px;
+    background: white;
+    border-radius: 5px;
+    font-family: thinCode;
+    font-size: 15pt;
+    padding-right: 5px;
+    font-weight: bold;
+}
+#socialMedia{
+    padding-top: 10px;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    display : flex;
+}
+
+
+.myBtn{
+    padding : 100px;
+    font-family:  codeStyle;
+    background-color: black;
+    font-size: 17pt;
+    color : white;
+    margin: 30px;
+}
+#twoBTn{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+#fontSizeSlide{
+    padding : 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#cookieBanner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: none; 
+    font-family: thinCode;
+    font-size: 18pt;
+  }
+#cookieBanner button {
+    background-color: burlywood;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }

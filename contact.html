@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        img{
+            width : 50px;
+            height : 50px;
+            margin : 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id = "warp">
+        <h1>Contact Information.</h1>
+        <h2>Billy Yan</h2>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>HOME</li>
+                </a>
+                <a href="about.html">
+                    <li>ABOUT</li>
+                </a>
+                <a href="contact.html">
+                    <li>CONTACT</li>
+                </a>
+            </ul>
+        </nav>
+
+        <table id = "messTable" width : 100%>
+            <tr>
+                <td id="messTableTitle" colspan="2">Contact Info</td>
+            </tr>
+            <tr style="padding-bottom: 2px;">
+                <td>Email</td>
+                <td>yiboyan@nyu.edu</td>
+            </tr>
+            <tr>
+                <td style="padding-top: 2px;">Phone Number</td>
+                <td style="padding-top: 2px;">(347)331-7993</td>
+            </tr>
+            
+        </table>
+
+        <p>
+
+
+        </p>
+
+        <form action="thankYou.html" method = "post">
+            <table id = "messTable" width : 100%>
+                <tr>
+                    <td id="messTableTitle" colspan="2">Send message to me</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <input class="input" type="text" name="username" placeholder="Enter Your Name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input class= "input "type="email" name = "email" placeholder="Enter Your Email"></td>
+                </tr>
+                <tr>
+                    <td>Day</td>
+                    <td>
+                        <input type="checkbox" name="classday" value="Monday"/> Mon 
+                        <input type="checkbox" name="classday" value="Tuesday"/> Tue 
+                        <input type="checkbox" name="classday" value="Wednesday"/> Wed 
+                        <input type="checkbox" name="classday" value="Thursday"/> Thu 
+                        <input type="checkbox" name="classday" value="Friday"/> Fri 
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 2px;" colspan="2">Message</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input id = "messageBox"class="input" type="message" name="message" placeholder="Message" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=>
+                        <input style="padding-right: 5px;" class="formBtn" type="reset" value="Clear"/>
+                    </td>
+                    <td>
+                        
+                        <input style="padding-left: 5px;" class="formBtn" type="submit" value="Send"/>
+                        
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <table id = "socialMedia">
+            <tr>
+                <td>
+                    <a href="https://www.facebook.com/yibo.yan.980" target="_blank" >
+                        <img src="icons/facebook.svg"/>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.instagram.com/imbillyannnnn/">
+                        <img src="icons/instagram.svg">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.linkedin.com/in/yanyibobilly/">
+                        <img src="icons/linkedin.svg"/>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://twitter.com/YiboYan6">
+                        <img src="icons/twitter-x.svg"/>
+                    </a>
+                </td>
+ 
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>
